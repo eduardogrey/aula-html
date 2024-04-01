@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+</head>
+<body>
+  <h1>Froms</h1>
+      
+  <form  method="get" action="api/post">
+   <label for="idlogin">Login:</label>
+   <input type="email" id="idlogin" name="idlogin"><br><br>
+   <label for="idsenha">Senha:</label>
+   <input type="password" id="idsenha" name="idsenha"><br><br>
+    <label for="genero">Gênero:</label><br>
+   <label for="sexo1">Masculino</label>
+     <input type="radio" id="sexo1" name="sexo" value="M">
+     <label for="sexo2">Feminino</label>
+     <input type="radio" id="sexo2" name="sexo" value="F">
+     <label for="sexo3">Não Informar</label>
+     <input type="radio" id="sexo3" name="sexo" value="naoInformar"><br><br>
+     <label for="Ling">Linguagens:</label><br>
+     <label for="idC">C</label>
+       <input type="checkbox" id="idC" name="idC" value="C">
+       <label for="Idling">Java</label>
+       <input type="checkbox" id="Idling" name="Idling" value="Java">
+       <label for="idP">Python</label>
+       <input type="checkbox" id="idP" name="idP" value="Python">
+        <br><br>
+        <label for="idemail">Email Profissional(opicional):</label>
+         <input type="email" id="idemail" name="idemail"><br><br>
+         <label for="lingAVG">Linguagem  mais Dominante:</label>
+         <select name="ling" id="ling">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+         </select><br><br>
+         <label for="salario">Sálario desejado:</label>
+         <input type="number" min="1000" max="2000"><br><br>
+         <label for="arquivo">Projeto da linguagem mais dominante:</label>
+         <input type="file" id="arquivo" name="arquivo"><br><br>
+         <label for="niver">Data de Aniversário(opicional):</label>
+         <input type="date" id="niver" name="niver" value="Data"><br><br>
+         <label for="op">Opinião sobre Empresa Y:</label><br>
+        <textarea name="Opinião" id="op" cols="20" rows="5"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Límpar">
+         
+  </form>
+</body>
+</html>
