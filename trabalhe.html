@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td>
+                <a href="http://127.0.0.1:5500/lista002/pagina1.html">
+                    <img src="img/Biopark-Educacao.svg" alt="Biopark">
+                </a>
+            </td>
+            <td align="right">
+                <a href="http://127.0.0.1:5500/lista002/Sobre-biopark.html" target="_blank"><strong>Sobre o Biopark</strong></a>|
+                <a href="http://127.0.0.1:5500/lista002/Empresas.html" target="_blank"><strong>Empresas</strong></a>|
+                <a href="http://127.0.0.1:5500/lista002/trabalhe.html" target="_blank"><strong>Trabalhe Conosco</strong></a>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h1>Trabalhe Conosco</h1>
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates eum autem?</b> Aliquid sint tempora quae nemo accusantium eaque quo inventore aut, voluptatum quam iure necessitatibus dolor fuga perspiciatis quod?</p>
+                <hr width="100%  align="center"   size="1"  color="gray"  ">
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="api/post" method="get">
+                    <label for="idemail"><strong>E-mail:</strong></label><br>
+                    <input type="email" name="idemail" id="idemail" placeholder="email@gmail.com" "><br><br>
+                      <label for="idnum"><strong>Número para Contato:</strong></label><br>
+                      <input type="number" name="idnum"  id="idnum" placeholder="(45)0 0000-0000"><br><br>
+                    <label for="descriçaõ"><strong>Sua Visão Sobre a Empresa:</strong></label><br>
+                    <textarea name="descrição" id="descriçaõ" cols="20" rows="5"></textarea><br><br>
+                    <label for="genero"><strong>Gênero:</strong></label><br>
+                    <label for="sexo1">Masculino</label>
+                    <input type="radio" name="sexo" value="M">
+                    <label for="sexo1">Feminino</label>
+                    <input type="radio" name="sexo" value="F">
+                    <label for="sexo3">Não Informar</label>
+                    <input type="radio" name="sexo" value="N/A"><br><br>
+                     <label for="lin"><strong>Idiomas Fluentes:</strong></label><br>
+                     <label for="ing">Inglês</label>
+                     <input type="checkbox" name="idioma" id="ing" value="Ing">
+                     <label for="esp">Espanhol</label>
+                     <input type="checkbox" name="idioma" id="esp" value="esp">
+                     <label for="Br">Português</label>
+                     <input type="checkbox" name="idioma" id="br" value="br">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
